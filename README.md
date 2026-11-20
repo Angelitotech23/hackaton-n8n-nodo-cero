@@ -2,6 +2,8 @@
 
 **Quince automatizaciones listas para construir en n8n Cloud, pensadas para emprendedores que quieren recuperar horas sin contratar a nadie.**
 
+Proyecto para la **Hackatón n8n: Nodo Cero** · Creado por **Jhon angelo / Speaker Tech** · Licencia MIT
+
 Cada automatización tiene su propia carpeta con una guía que cubre el proceso completo: qué resuelve, cómo funciona, cómo construirla a mano, cómo pedir su construcción a la IA de n8n Cloud, qué conectar, cómo probarla y qué riesgos revisar.
 
 > Este repositorio contiene solo guías y prompts. No incluye credenciales, IDs reales ni datos personales. Todo valor que debes reemplazar empieza con `PEGAR_`.
@@ -138,6 +140,28 @@ Después de tu primera automatización, sigue con [03 Recordatorio de facturas](
 
 Cada guía sigue la misma plantilla: para qué sirve, proceso, piezas, antes de empezar, construcción a mano, construcción con IA, credenciales, pruebas, riesgos.
 
+## Flujos en n8n Cloud
+
+Cada automatización tiene su flujo publicado como borrador en n8n Cloud. Los enlaces abren el flujo en la instancia del autor; necesitas acceso para verlos.
+
+| # | Flujo | Enlace |
+|---|---|---|
+| 01 | Captura de leads a Sheets, Slack y bienvenida | [Abrir](https://jhoncito23.app.n8n.cloud/workflow/PCZzfUDRj7lmtXdd) |
+| 02 | Triaje de correos con IA: cliente, urgente u otro | [Abrir](https://jhoncito23.app.n8n.cloud/workflow/x6yKIhJn6zElu330) |
+| 03 | Recordatorio automático de facturas vencidas | [Abrir](https://jhoncito23.app.n8n.cloud/workflow/DJSiwwpW62t2Ao2U) |
+| 04 | Comprobante de pedido desde formulario | [Abrir](https://jhoncito23.app.n8n.cloud/workflow/Qy6HzbdNtPVGvwVs) |
+| 05 | Extracción de datos de facturas PDF a Gastos | [Abrir](https://jhoncito23.app.n8n.cloud/workflow/EtzinQWVEJeFyDHm) |
+| 06 | Avisos de pagos Stripe: exitoso y fallido | [Abrir](https://jhoncito23.app.n8n.cloud/workflow/p2Gyql3UC6aV9Ua9) |
+| 07 | Onboarding de cliente tras pago: Drive, brief y Trello | [Abrir](https://jhoncito23.app.n8n.cloud/workflow/uTmZ5SkgjJ1qAV1c) |
+| 08 | Publicación programada en LinkedIn desde hoja | [Abrir](https://jhoncito23.app.n8n.cloud/workflow/Qf2bwJoRrbrHYpjp) |
+| 09 | Newsletter semanal desde RSS | [Abrir](https://jhoncito23.app.n8n.cloud/workflow/vw5602XFtOM74qaF) |
+| 10 | Notas de reunión a tareas en Trello con IA | [Abrir](https://jhoncito23.app.n8n.cloud/workflow/evqlFdK8CPMWfym5) |
+| 11 | Reporte semanal de métricas con resumen IA | [Abrir](https://jhoncito23.app.n8n.cloud/workflow/edVZqoT7mUSYKg3W) |
+| 12 | Registro de gastos desde recibos por correo | [Abrir](https://jhoncito23.app.n8n.cloud/workflow/RuX7avIZEzhzStb9) |
+| 13 | Atención al cliente: clasificación y borrador con IA | [Abrir](https://jhoncito23.app.n8n.cloud/workflow/2pVYTtrTAdWUaOZq) |
+| 14 | Agenda de citas con confirmación y recordatorio | [Abrir](https://jhoncito23.app.n8n.cloud/workflow/0PjvBLwlM0IACxS3) |
+| 15 | Prospección con lista propia y opción de baja | [Abrir](https://jhoncito23.app.n8n.cloud/workflow/H0JXPKJXzVhcpwdu) |
+
 ## Estado y limitaciones
 
 - Los flujos están diseñados y validados como borradores en n8n Cloud. Aún no se han probado de punta a punta en producción.
@@ -158,6 +182,10 @@ Cada guía sigue la misma plantilla: para qué sirve, proceso, piezas, antes de 
 
 Abre un issue con el caso de uso antes de enviar cambios. Cada automatización nueva debe incluir su carpeta con la plantilla completa, validación de datos, manejo de errores y una sección de riesgos.
 
+## Autor
+
+**Jhon angelo / Speaker Tech**, para la Hackatón n8n: Nodo Cero.
+
 ## Licencia
 
-Pendiente de definir. Hasta entonces, todos los derechos están reservados a los autores.
+MIT. Ver [LICENSE](LICENSE).
