@@ -140,6 +140,8 @@ Después de tu primera automatización, sigue con [03 Recordatorio de facturas](
 
 Cada guía sigue la misma plantilla: para qué sirve, proceso, piezas, antes de empezar, construcción a mano, construcción con IA, credenciales, pruebas, riesgos.
 
+Cada carpeta también incluye `flujo.ts`, la versión limpia del flujo escrita con el SDK de n8n (`@n8n/workflow-sdk`). No contiene IDs de tu instancia ni credenciales: solo referencias por nombre (`newCredential('Gmail')`). Antes de usarlo, reemplaza los valores `PEGAR_`.
+
 ## Flujos en n8n Cloud
 
 Cada automatización tiene su flujo publicado como borrador en n8n Cloud. Los enlaces abren el flujo en la instancia del autor; necesitas acceso para verlos.
