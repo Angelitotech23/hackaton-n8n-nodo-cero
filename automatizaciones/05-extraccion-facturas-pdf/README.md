@@ -31,7 +31,7 @@ Los proveedores te mandan facturas en PDF por correo. Pasarlas a mano a una hoja
 
 ## Cómo construirlo a mano
 
-1. **Gmail Trigger**, filtro "no leídos" y búsqueda `subject:factura has:attachment filename:pdf`. Activa la descarga de adjuntos en las opciones del trigger y verifica que el nombre de la propiedad sea `attachment_0`. En la versión actual del nodo, este ajuste puede estar en otra sección: revísalo.
+1. **Gmail Trigger**, filtro "no leídos" y búsqueda `subject:factura has:attachment filename:pdf`. Activa la descarga de adjuntos y verifica que el nombre de la propiedad sea `attachment_0`. Si no encuentras la opción de descarga, revisa las opciones del trigger o la documentación del nodo en tu versión de n8n.
 2. **Extract From File**, operación "PDF", campo binario `attachment_0`.
 3. **Agente de IA**, con modelo DeepSeek Chat, temperatura 0.1. En el prompt pasa el texto `{{ $json.text }}` y el asunto. En el system message pide JSON con `proveedor`, `fecha` (AAAA-MM-DD), `total`, `impuesto`, `moneda`, y prohíbe inventar datos.
 4. **Edit Fields (Set)** que lee `JSON.parse($json.output)` y crea cada campo. Usa tipo número para `total` e `impuesto`.
